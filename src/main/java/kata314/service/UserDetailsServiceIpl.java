@@ -1,11 +1,11 @@
-package ru.kata.spring.boot_security.demo.service;
+package kata314.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import ru.kata.spring.boot_security.demo.entity.User;
-import ru.kata.spring.boot_security.demo.repository.UserRepository;
+import kata314.entity.User;
+import kata314.repository.UserRepository;
 
 
 @Service

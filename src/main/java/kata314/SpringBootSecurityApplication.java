@@ -1,4 +1,4 @@
-package ru.kata.spring.boot_security.demo;
+package kata314;
 
 import org.springframework.boot.SpringApplication;
 

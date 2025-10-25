@@ -1,8 +1,8 @@
-package ru.kata.spring.boot_security.demo.service;
+package kata314.service;
 
 import org.springframework.stereotype.Service;
-import ru.kata.spring.boot_security.demo.repository.RoleRepository;
-import ru.kata.spring.boot_security.demo.entity.Role;
+import kata314.repository.RoleRepository;
+import kata314.entity.Role;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.List;

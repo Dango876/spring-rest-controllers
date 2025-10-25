@@ -1,4 +1,4 @@
-package ru.kata.spring.boot_security.demo.entity;
+package kata314.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

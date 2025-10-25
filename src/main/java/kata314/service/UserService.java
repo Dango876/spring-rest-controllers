@@ -1,6 +1,6 @@
-package ru.kata.spring.boot_security.demo.service;
+package kata314.service;
 
-import ru.kata.spring.boot_security.demo.entity.User;
+import kata314.entity.User;
 
 import java.util.List;
 
