@@ -1,6 +1,6 @@
-package kata314.service;
+package rest.service;
 
-import kata314.entity.User;
+import rest.entity.User;
 
 import java.util.List;
 
@@ -9,6 +9,6 @@ public interface UserService {
     User getUserById(Long id);
     User getUserByEmail(String email);
     void deleteUserById(Long id);
-    void saveUser(User user, List<Long> roleIds);
-    void updateUser(Long id, User userDetails, List<Long> roleIds);
+    User saveUser(User user, List<Long> roleIds);
+    User updateUser(Long id, User updatedUser, List<Long> roleIds);
 }

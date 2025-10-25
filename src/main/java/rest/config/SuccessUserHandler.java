@@ -1,4 +1,4 @@
-package kata314.config;
+package rest.config;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
