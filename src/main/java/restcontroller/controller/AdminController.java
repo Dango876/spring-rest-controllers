@@ -1,11 +1,11 @@
-package rest.controller;
+package restcontroller.controller;
 
-import rest.dto.RoleDto;
-import rest.service.RoleService;
-import rest.util.UserMapper;
-import rest.dto.UserDto;
-import rest.entity.User;
-import rest.service.UserService;
+import restcontroller.dto.RoleDto;
+import restcontroller.service.RoleService;
+import restcontroller.util.UserMapper;
+import restcontroller.dto.UserDto;
+import restcontroller.entity.User;
+import restcontroller.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -49,8 +49,8 @@ public class AdminController {
 
     @PutMapping("/users/{id}")
     public ResponseEntity<UserDto> updateUser(@PathVariable Long id,
-                                              @RequestBody User updatedUser,
-                                              @RequestParam List<Long> roleIds) {
+                              @RequestBody User updatedUser,
+                              @RequestParam List<Long> roleIds) {
         User user = userService.updateUser(id, updatedUser, roleIds);
         return ResponseEntity.ok(userMapper.toDto(user));
     }

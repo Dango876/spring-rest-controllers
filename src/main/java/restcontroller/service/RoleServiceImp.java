@@ -1,7 +1,7 @@
-package rest.service;
+package restcontroller.service;
 
-import rest.dto.RoleDto;
-import rest.repository.RoleRepository;
+import restcontroller.dto.RoleDto;
+import restcontroller.repository.RoleRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,9 +1,9 @@
-package rest.service;
+package restcontroller.service;
 
-import rest.entity.Role;
-import rest.entity.User;
-import rest.repository.RoleRepository;
-import rest.repository.UserRepository;
+import restcontroller.entity.Role;
+import restcontroller.entity.User;
+import restcontroller.repository.RoleRepository;
+import restcontroller.repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

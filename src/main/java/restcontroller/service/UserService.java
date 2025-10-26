@@ -1,6 +1,6 @@
-package rest.service;
+package restcontroller.service;
 
-import rest.entity.User;
+import restcontroller.entity.User;
 
 import java.util.List;
 

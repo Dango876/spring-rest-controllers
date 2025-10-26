@@ -1,7 +1,6 @@
-package rest.service;
+package restcontroller.service;
 
-import rest.dto.RoleDto;
-import rest.entity.Role;
+import restcontroller.dto.RoleDto;
 
 import java.util.List;
 

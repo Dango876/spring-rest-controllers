@@ -1,6 +1,6 @@
-package rest.repository;
+package restcontroller.repository;
 
-import rest.entity.Role;
+import restcontroller.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

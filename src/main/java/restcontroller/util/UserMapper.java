@@ -1,8 +1,8 @@
-package rest.util;
+package restcontroller.util;
 
-import rest.dto.RoleDto;
-import rest.dto.UserDto;
-import rest.entity.User;
+import restcontroller.dto.RoleDto;
+import restcontroller.dto.UserDto;
+import restcontroller.entity.User;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

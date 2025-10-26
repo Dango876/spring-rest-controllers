@@ -1,9 +1,9 @@
-package rest.service;
+package restcontroller.service;
 
+import restcontroller.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import rest.entity.User;
 
 import java.util.Collection;
 import java.util.stream.Collectors;
@@ -30,25 +30,5 @@ public class UserDetailsImp implements UserDetails {
     @Override
     public String getUsername() {
         return user.getEmail();
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return false;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return false;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return false;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return false;
     }
 }

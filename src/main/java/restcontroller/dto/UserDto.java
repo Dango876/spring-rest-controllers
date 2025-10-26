@@ -1,6 +1,6 @@
-package rest.dto;
+package restcontroller.dto;
 
-import rest.entity.User;
+import restcontroller.entity.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

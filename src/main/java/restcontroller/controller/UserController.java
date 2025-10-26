@@ -1,9 +1,9 @@
-package rest.controller;
+package restcontroller.controller;
 
-import rest.util.UserMapper;
-import rest.dto.UserDto;
-import rest.entity.User;
-import rest.service.UserService;
+import restcontroller.util.UserMapper;
+import restcontroller.dto.UserDto;
+import restcontroller.entity.User;
+import restcontroller.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;

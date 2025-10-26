@@ -1,10 +1,10 @@
-package rest.entity;
+package restcontroller.entity;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -19,9 +19,10 @@ public class Role {
     @Column(name = "role_id")
     private Long id;
 
-    @Column(name = "name", nullable = false, unique = true)
+    @Column(name = "name")
     private String name;
 
     @ManyToMany(mappedBy = "roles")
     private Set<User> users;
+
 }
