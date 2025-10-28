@@ -17,9 +17,16 @@ public class UserDetailsImp implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return user.getRoles().
-                stream().
-                map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());
+        return user.getRoles().stream()
+                .map(role -> {
+                    String roleName = role.getName();
+                    if (roleName.startsWith("ROLE_")) {
+                        return new SimpleGrantedAuthority(roleName);
+                    } else {
+                        return new SimpleGrantedAuthority("ROLE_" + roleName);
+                    }
+                })
+                .collect(Collectors.toList());
     }
 
     @Override
@@ -31,4 +38,25 @@ public class UserDetailsImp implements UserDetails {
     public String getUsername() {
         return user.getEmail();
     }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
 }
+
