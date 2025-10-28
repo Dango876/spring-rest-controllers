@@ -21,9 +21,8 @@ public class UserController {
     }
 
     @GetMapping("/current")
-    public ResponseEntity<UserDto> getCurrentUser(Authentication authentication) {
+    public UserDto getCurrentUser(Authentication authentication) {
         User user = userService.getUserByEmail(authentication.getName());
-        UserDto userDto = userMapper.toDto(user);
-        return ResponseEntity.ok(userDto);
+        return userMapper.toDto(user);
     }
 }
