@@ -21,7 +21,6 @@
 
 <div class="container-fluid pt-5 mt-4">
     <div class="row">
-        <!-- Боковая панель -->
         <div class="col-md-3 col-lg-2 bg-light vh-100 border-end sidebar p-0">
             <div class="list-group list-group-flush">
                 <a href="#" class="list-group-item list-group-item-action px-3 active" id="adminTabBtn">Admin</a>
@@ -30,11 +29,9 @@
         </div>
 
         <div class="col-md-9 col-lg-10">
-            <!-- Админ-панель -->
             <div id="adminView">
                 <h2 class="mb-4">Admin panel</h2>
 
-                <!-- Вкладки -->
                 <ul class="nav nav-tabs mb-3">
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="tab" href="#usersTableSection">Users table</a>
@@ -45,7 +42,6 @@
                 </ul>
 
                 <div class="tab-content">
-                    <!-- Таблица пользователей -->
                     <div class="tab-pane fade show active" id="usersTableSection">
                         <div class="bg-light p-2 mb-3 rounded">
                             <h5 class="mb-0">All users</h5>
@@ -72,7 +68,6 @@
                         </div>
                     </div>
 
-                    <!-- Форма добавления -->
                     <div class="tab-pane fade" id="newUserFormSection">
                         <div class="border rounded p-3">
                             <h5 class="mb-3 text-start bg-light px-3 py-2 rounded">Add new user</h5>
@@ -110,7 +105,6 @@
                 </div>
             </div>
 
-            <!-- User View -->
             <div id="userView" class="d-none">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h2>User profile</h2>
@@ -143,7 +137,6 @@
     </div>
 </div>
 
-<!-- Edit Modal -->
 <div class="modal fade" id="editUserModal" tabindex="-1">
     <div class="modal-dialog modal-md modal-dialog-centered">
         <div class="modal-content">
@@ -196,7 +189,6 @@
 </div>
 
 
-<!-- Delete Modal -->
 <div class="modal fade" id="deleteUserModal" tabindex="-1">
     <div class="modal-dialog modal-md modal-dialog-centered">
         <div class="modal-content">
